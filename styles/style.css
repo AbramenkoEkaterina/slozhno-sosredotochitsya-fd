@@ -218,4 +218,5 @@
   font-weight: 700;
   font-size: 116px;
   line-height: 83%;
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
