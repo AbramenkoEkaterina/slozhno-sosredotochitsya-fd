@@ -5,8 +5,7 @@
 */
 
 :root.theme-light {
-  --bg-color: #FFF1F7;
-  ; /*фон страницы если будет проблема с картинкой*/
+  --bg-color: #FFF1F7; /*фон страницы если будет проблема с картинкой*/
   --bg-image: url(../images/cover-image-light.png); /*фон страницы*/
   --corners-color: #353430; /*цвет уголков*/
   --title-color: #FFC2E6; /*использутся h1 заголовке*/
@@ -33,7 +32,6 @@
 
   :root.theme-light {
     --bg-color: #FFF1F7;
-    ; /*фон страницы если будет проблема с картинкой*/
     --bg-image: url(../images/cover-image-light.png); /*фон страницы*/
     --corners-color: #353430; /*цвет уголков*/
     --title-color: #FFC2E6; /*использутся h1 заголовке*/
