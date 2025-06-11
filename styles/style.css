@@ -101,10 +101,31 @@
   text-transform: lowercase;
   font-family: inherit;
   font-weight: 400;
-  font-size: 18px; /* шрифт и кнопки доделать*/
+  font-size: 18px; 
   line-height: 18px;
   letter-spacing: 0%;
   text-align: center;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--button-border-hover); /*наведение*/
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--button-border-def); /*добавляется динамически при переключении тем (через JS)*/
+  pointer-events: none;
+}
+
+.header__theme-menu-button:active {
+  box-shadow: 0 0 0 1px var(--button-border-active);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  box-shadow: 0 1px 0 0 var(--button-border-visible);
 }
 
 .title-decor {
@@ -121,7 +142,7 @@
 
 .text-link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+  text-shadow: 2px 2px 0 var(--shadow-color, #ff0070);
 }
 .text-link:focus {
   outline: none;
@@ -140,7 +161,7 @@
   font-weight: 700;
   font-size: var(--h1-size-mobile);
   line-height: 83%;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
   
 }
 
@@ -170,7 +191,7 @@
 
 .section {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr;  /* надо подумать при медии запросе на декстопе мешает*/
   gap: 20px;
 }
 
@@ -219,7 +240,7 @@
   font-weight: 700;
   font-size: 116px;
   line-height: 83%;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 
@@ -245,6 +266,7 @@
 
 .title {
   margin-inline-start: -20px;
+  font-size: var(--h1-size-dessktop);
 
 }
 
@@ -348,5 +370,60 @@
 .footer {
   --padding: 20px;
   padding: var(--padding);
+}
+}
+
+
+@media (width >= 1024px) {
+
+  .header {
+    block-size: 100vh;
+    --padding: 20px;
+    padding: var(--padding);
+ }
+
+ .header__theme-menu {
+  grid-row: 1;
+  margin-block-start: 0px;
+  justify-self: center;
+}
+
+.header__theme-menu-list {
+  flex-direction: row;
+}
+
+.title {
+  margin-inline-start: -20px;
+  font-size: var(--h1-size-dessktop);
+}
+
+.first-part {
+  grid-template-columns: 314px 1fr;
+  gap: 19px;
+}
+
+.second-part {
+  display: grid;
+  grid-template-columns: 315px 1fr;
+}
+
+.second-part .section-title {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.second-part .list {
+ display: grid;
+ grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.third-part {
+  display: grid;
+  grid-template-columns: 315px 1fr;
+}
+
+.footer-title {
+  font-size: var(--h1-size-dessktop);
 }
 }
