@@ -22,8 +22,9 @@
   --button-border-active: #ff0070; /*цвет обводки кнопки в активном состоянии*/
   --button-border-visible: #ff0070; /* обводка через tab*/
   --padding: 10px;/*отступ секции*/
+  --decor-element-display: block; /*рек сделали переменной*/
 
-  --font-family: 'IBM Plex Mono', sans-serif; /*основной шрифт*/
+  --font-family: 'IBM Plex Mono', monospace, sans-serif; /*основной шрифт*/
   --fn-size: 18px;
   --ft-weight: 400;
 

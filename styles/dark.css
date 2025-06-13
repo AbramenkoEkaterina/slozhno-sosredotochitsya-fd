@@ -10,7 +10,6 @@
   --corners-color: #ff0070; /*цвет уголков*/
   --title-color: #DB00FF; /*использутся h1 заголовке*/
   --button-text-color: #FF0070; /*цвет текста кнопок*/
-  --header-button-bg-color: transparent; /*фон кнопок в навигации*/
   --header-tex-color: #000028; /*цвет параграфа в хедере*/
   --element-tex-color: #FF0070; /*цвет декоративного элемента*/
   --text-color: #f1b2ce; /*цвет текста в параграфах*/
@@ -23,5 +22,6 @@
   --button-border-hover: #FF007066; /*цвет обводки кнопки наведение*/
   --button-border-active: #ff0070; /*цвет обводки кнопки в активном состоянии*/
   --button-border-visible: #ff0070; /* обводка через tab*/
+  --decor-element-display: block; /*рек сделали переменной*/
 }
 

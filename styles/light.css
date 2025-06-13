@@ -10,7 +10,6 @@
   --corners-color: #353430; /*цвет уголков*/
   --title-color: #FFC2E6; /*использутся h1 заголовке*/
   --button-text-color: #353430; /*цвет текста кнопок*/
-  --header-button-bg-color: transparent; /*фон кнопок в навигации*/
   --header-tex-color: #353430; /*цвет параграфа в хедере*/
   --text-color: #353430; /*цвет текста в параграфах*/
   --accent-color: #353430; /*цвет заголовка второго уровня*/
@@ -22,11 +21,15 @@
   --button-border-hover: #32312D66; /*цвет обводки кнопки наведение*/
   --button-border-active: #353430; /*цвет обводки кнопки в активном состоянии*/
   --button-border-visible: #353430; /* обводка через tab*/
+  --decor-element-display: none; /*отключили рек*/
 }
 
+/*
 .theme-light .decor_element {
   display: none;
-}
+}*/
+
+
 
 @media (prefers-color-scheme: light) {
 
@@ -36,7 +39,6 @@
     --corners-color: #353430; /*цвет уголков*/
     --title-color: #FFC2E6; /*использутся h1 заголовке*/
     --button-text-color: #353430; /*цвет текста кнопок*/
-    --header-button-bg-color: transparent; /*фон кнопок в навигации*/
     --header-tex-color: #353430; /*цвет параграфа в хедере*/
     --text-color: #353430; /*цвет текста в параграфах*/
     --accent-color: #353430; /*цвет заголовка второго уровня*/
@@ -48,5 +50,6 @@
     --button-border-hover: #32312D66; /*цвет обводки кнопки наведение*/
     --button-border-active: #353430; /*цвет обводки кнопки в активном состоянии*/
     --button-border-visible: #353430; /* обводка через tab*/
+    --decor-element-display: none; /*отключили рек*/
   }
 }
